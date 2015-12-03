@@ -7,7 +7,8 @@ import (
 )
 
 func TestBoom(t *testing.T) {
-	conn, err := net.Dial("tcp", "localhost:5423")
-	user.Current()
-	t.Fatalf("conn: %s, err: %s", conn, err)
+	for i := 0; i < 1000; i++ {
+		_, _ = net.Dial("tcp", "localhost:1337")
+		_, _ = user.Current()
+	}
 }
