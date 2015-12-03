@@ -1,7 +1,7 @@
 segfaults!
 
 ```shell
-$ go test -ldflags '-extldflags "-static"'
+$ go run -ldflags '-extldflags "-static"' .
 fatal error: unexpected signal during runtime execution
 [signal 0xb code=0x1 addr=0xe5 pc=0x7fa688e17a5c]
 
